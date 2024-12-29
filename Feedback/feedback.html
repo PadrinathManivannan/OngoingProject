@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\project\homepage\Feedback\feedback.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Paprika&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script src="script.js" defer></script>
+    <title>Feedback</title>
+
+    
+    
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "Dnjqrpti0-3kiI6Xx",
+      });
+   })();
+</script>
+
+
+
+</head>
+<body>
+    
+ <!-------------------Announcement bar-----------------> 
+ <div class="announcement-bar">
+    <div class="announcement-content">
+    <a href="#offer1">🎉 10% off on your first purchase!</a>
+    <a href="#offer2">🚚 Free delivery on orders above ₹499!</a>
+    <a href="#offer3">📅 Limited-time offers on select products!</a>
+    <a href="#offer4">🔔 Subscribe to our newsletter for exclusive deals!</a>
+    </div>
+</div>
+
+ <!---------------------------navigation bar--------------------->
+
+ <nav class="nav">
+    <i class="uil uil-bars navOpenBtn"></i>
+    
+    <a href="#" class="logo"> GheethasOrganics <p>Pure Health, Delight!</p></a>
+    
+    
+    <ul class="nav-links">
+      <i class="uil uil-times navCloseBtn"></i>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">My Orders</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="D:\project\homepage\about\about.html">About Us</a></li>
+      <li><a href="D:\project\homepage\Feedback\feedback.html">Feedback</a></li>
+      <li><a href="D:\project\homepage\FAQs\faqs.html">FAQs</a></li>
+    </ul>
+    
+    <i class="uil uil-search search-icon" id="searchIcon"></i>
+
+    <div id="slider" style="width: auto; overflow-x: auto;"></div>
+      
+      
+      <!-- Slider content here -->
+  
+  
+   
+   
+    <!-------------------<i class="uil uil-user-square" id="UserIcon"></i>----------->
+
+    
+
+    <div class="search-box">
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+        <input type="text" placeholder="Search here..." />
+    </div>
+           
+    
+    <div class="cart">
+        <a href="cart" ><i class="uil uil-shopping-cart-alt"></i></a>
+    </div>
+
+    <div class="UserIcon">
+        <a href="profile" ><i class="uil uil-user-square" id="UserIcon"></i></a>
+        </div>
+    
+        
+    </div>
+
+  </nav>
+
+  <div class="image1">
+    <img src="D:\project\homepage\Feedback\feedback.png" >
+</div>
+
+<div class="image2">
+    <img src="D:\project\homepage\Feedback\rating.png" >
+</div>
+
+
+  
+<div class="form-container">
+    
+    <h2>Help Us Serve You Better!    </h2>
+    <form id="feedbackForm">
+      
+        <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required placeholder="Please Enter Name">
+      </div>
+
+      <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <input type="tel" id="tel" name="mobile" placeholder="Enter your valid number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Please Enter valid email">
+      </div>
+     
+     
+      <div class="form-group">
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" name="feedback" required placeholder="Give us your Feedback here"></textarea>
+      </div>
+      
+      
+      <button onclick="sendemail(event)" type="submit" class="submit-btn" >Submit</button>
+      
+      <div id="successMessage" class="success-message" ></div>
+
+    
+    </form>
+  </div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+  <!-------------------------------------------------------Follow page-------------------------------------------------->
+
+  <div class="Follow" id="Follow">
+
+    <p class="blink">follow us </p>
+
+<a href="#"><img src="D:\project\homepage\FAQs\instagram (1).png" alt="Instagram"></a>
+<a href="#"><img src="D:\project\homepage\FAQs\youtube.png" alt="Youtube"></a>
+<a href="#"><img src="D:\project\homepage\FAQs\whatsapp.png" alt="Whatsapp"></a>
+
+</div>
+
+<div class="info">
+<p>
+    &copy;2024 Built by Er.M.Padrinath 
+</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\project\homepage\product details\details.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Paprika&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="D:\project\homepage\product details\script.js" defer></script>
+    <title>details</title>
+</head>
+
+
+<body>
+    <!-- Pop-up Slider -->
+<div id="popup-slider" class="popup-slider">
+    <div class="popup-content">
+        <span class="close-popup" onclick="closePopup()">&times;</span>
+        <div class="popup-left">
+            <img id="popup-image" src="D:\project\homepage\categories\butter.jpg" alt="Butter" />
+        </div>
+        <div class="popup-right">
+            <h3 id="popup-title">Butter</h3>
+            <div class="quantity-box">
+                <label for="size">Size:</label>
+                <select id="size" onchange="updatePrice()">
+                    <option value="100">100g - ₹99</option>
+                    <option value="250">250g - ₹249</option>
+                    <option value="500">500g - ₹499</option>
+                    <option value="1000">1kg - ₹899</option>
+                </select>
+            </div>
+            <div class="quantity-box">
+                <label for="quantity">Quantity:</label>
+                <input id="quantity" type="number" min="1" max="50" value="1" onchange="updatePrice()" />
+            </div>
+            <div class="price">Price: ₹<span id="popup-price">99</span></div>
+            <div class="button-container">
+                <button onclick="addToCart()">Add to Cart</button>
+                <button onclick="buyNow()">Buy Now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+    
+
+
+</body>
+</html>

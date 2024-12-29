@@ -1,0 +1,57 @@
+/* style.css */
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+     
+    
+  }
+
+span{
+  color: green;
+  
+}
+
+span p{
+  align-items: center;
+  justify-content: center;
+  margin-left: 42%;
+  font-family: Satisfy, cursive;
+  position: absolute; 
+  top: 20px; 
+  width: 100%;
+  text-align: center; 
+  font-size: 24px; 
+  color: green; 
+  margin: 0;
+  margin-top: 0;
+  padding-top: 10%;
+
+}
+  
+  #logo {
+   
+    height:50%;
+    width: 50%;
+    padding-top: 10%;
+    animation: fadeInZoom 5s ease-in-out;
+  }
+  
+  @keyframes fadeInZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  

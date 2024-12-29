@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\project\homepage\payment\payment.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Paprika&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js" defer></script>
+    <title>Home</title>
+</head>
+
+
+
+
+
+
+<body>
+
+   
+    
+
+    <!-------------------Announcement bar-----------------> 
+    <div class="announcement-bar">
+        <div class="announcement-content">
+        <a href="#offer1">🎉 10% off on your first purchase!</a>
+        <a href="#offer2">🚚 Free delivery on orders above ₹499!</a>
+        <a href="#offer3">📅 Limited-time offers on select products!</a>
+        <a href="#offer4">🔔 Subscribe to our newsletter for exclusive deals!</a>
+        </div>
+    </div>
+     <!---------------------------navigation bar--------------------->
+
+     <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        
+        <a href="#" class="logo"><img src="D:\project\homepage\logo\Gheethas .ico" class="logo-icon">GheethasOrganics</a>        
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="D:\project\homepage\homepage.html">Home</a></li>
+          
+          
+          <li><a href="D:\project\homepage\about\about.html">About Us</a></li>
+          <li><a href="D:\project\homepage\Feedback\feedback.html">Feedback</a></li>
+          <li><a href="D:\project\homepage\FAQs\faqs.html">FAQs</a></li>
+          <li><a href="#">My Orders</a></li>
+          
+        </ul>
+        
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+       
+       
+        <!-------------------<i class="uil uil-user-square" id="UserIcon"></i>----------->
+ 
+        
+
+               
+        
+        <div class="cart">
+            <a href="D:\project\homepage\cart\cart.html"><i class="uil uil-shopping-cart-alt"></i></a>
+            <span class="cart-notification" id="cart-notification" style="display: none;">0</span>
+          </div>
+          <script src="D:\project\homepage\cart\cart.js"></script>
+
+
+        <div class="UserIcon">
+            <a href="profile" ><i class="uil uil-user-square" id="UserIcon"></i></a>
+            </div>
+        
+            
+        </div>
+
+      </nav>
+
+
+
+<div class="container">
+    <h2>Payment Page</h2>
+    <form id="paymentForm">
+        <div class="form-group">
+            <label for="amount">Amount (₹):</label>
+            <input type="number" id="amount" name="amount" value="" readonly>
+        </div>
+
+        <div class="form-group">
+            <label for="paymentMethod">Select Payment Method:</label>
+            <div class="payment-options">
+                <label><input type="radio" name="paymentMethod" value="COD" id="codOption"> Cash on Delivery (Under ₹3000)</label>
+                <label><input type="radio" name="paymentMethod" value="UPI"> UPI Transactions</label>
+                <label><input type="radio" name="paymentMethod" value="QR"><img src="path_to_qr_code.png" alt="Scan QR Code"> QR Scanning</label>
+                <label><input type="radio" name="paymentMethod" value="Card"> Card Payment</label>
+            </div>
+        </div>
+
+        <div id="upiDetails" class="form-group" style="display: none;">
+            <label for="upiID">Enter UPI ID:</label>
+            <input type="text" id="upiID" name="upiID" placeholder="example@upi">
+        </div>
+
+        <div id="cardDetails" class="form-group" style="display: none;">
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" placeholder="1234 5678 9012 3456">
+            <label for="expiry">Expiry Date:</label>
+            <input type="text" id="expiry" name="expiry" placeholder="MM/YY">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" placeholder="123">
+        </div>
+
+        <button type="submit">Make Payment</button>
+    </form>
+    <p class="note">Payment receipt will be sent to your registered email.</p>
+</div>
+
+
+
+
+
+</body>
+</html>

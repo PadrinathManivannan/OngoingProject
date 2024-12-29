@@ -1,0 +1,76 @@
+/* Popup slider styling */
+.popup-slider {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.popup-slider.active {
+    right: 0;
+}
+
+.popup-content {
+    background: #fff;
+    margin: auto;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    padding: 20px;
+    position: relative;
+}
+
+.popup-left img {
+    width: 200px;
+    height: auto;
+}
+
+.popup-right {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.popup-right h3 {
+    margin-bottom: 20px;
+}
+
+.quantity-box {
+    margin-bottom: 10px;
+}
+
+.quantity-box select,
+.quantity-box input {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+}

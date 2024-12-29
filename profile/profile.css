@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background:white;
+  
+}
+.nav {
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: orange;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+ 
+}
+
+.nav a{
+    color:black;
+    text-decoration: none;
+    font-family: "Young Serif", serif;
+    padding-left: 450px;
+    
+}
+
+.nav .logo {
+    font-size: 25px;
+    font-weight: 600;
+    font-family: "Young Serif", serif;
+  }
+  
+  .nav .logo:hover{
+    color:skyblue;
+  }
+
+  .profile-logo{
+    margin-top: 50px;
+  }
+
+.container {
+    max-width: 500px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .container span {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .container input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .container button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .container span {
+            display: block;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .container input {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            box-sizing: border-box;
+        }
+        .container button {
+            margin-top: 10px;
+            padding: 10px;
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #update-profile-button {
+            margin: 20px auto;
+            display: block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }

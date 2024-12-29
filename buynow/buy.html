@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\project\homepage\buynow\buy.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Paprika&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="buy.js" defer></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/body-parser"></script>
+
+
+    <title>Shipping</title>
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+    <!-------------------Announcement bar-----------------> 
+    <div class="announcement-bar">
+        <div class="announcement-content">
+        <a href="#offer1">🎉 10% off on your first purchase!</a>
+        <a href="#offer2">🚚 Free delivery on orders above ₹499!</a>
+        <a href="#offer3">📅 Limited-time offers on select products!</a>
+        <a href="#offer4">🔔 Subscribe to our newsletter for exclusive deals!</a>
+        </div>
+    </div>
+
+
+
+
+    <!---------------------------navigation bar--------------------->
+
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        
+        <a href="#" class="logo"><img src="D:\project\homepage\logo\Gheethas .ico" class="logo-icon">GheethasOrganics</a>        
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="#">Home</a></li>
+          
+          
+          <li><a href="D:\project\homepage\about\about.html">About Us</a></li>
+          <li><a href="D:\project\homepage\Feedback\feedback.html">Feedback</a></li>
+          <li><a href="D:\project\homepage\FAQs\faqs.html">FAQs</a></li>
+          <li><a href="#">My Orders</a></li>
+          
+        </ul>
+        
+        
+       
+       
+        <!-------------------<i class="uil uil-user-square" id="UserIcon"></i>----------->
+ 
+        
+
+      
+               
+        
+        <div class="cart">
+            <a href="D:\project\homepage\cart\cart.html"><i class="uil uil-shopping-cart-alt"></i></a>
+            <span class="cart-notification" id="cart-notification" style="display: none;">0</span>
+          </div>
+          <script src="D:\project\homepage\cart\cart.js"></script>
+
+
+        <div class="UserIcon">
+            <a href="profile" ><i class="uil uil-user-square" id="UserIcon"></i></a>
+            </div>
+        
+            
+        </div>
+
+      </nav>
+
+ <!------------------------- SHIPPING DETAILS----------------->
+
+      <div class="form-container">
+
+        <form id="shippingForm" class="slide-up">
+          <h1><i class="fas fa-shipping-fast"></i> Shipping Details</h1>
+
+          <div class="form-group name">
+
+            <div class="form-field">
+              <label for="f-name">First Name</label>
+              <input type="text" id="f-name" placeholder="Please Enter Your Name" name="f-name" required>
+            </div>
+
+            <div class="form-field">
+              <label for="l-name">Last Name</label>
+              <input type="text" id="l-name" placeholder="Surname (optional)" name="l-name">
+            </div>
+
+          </div>
+
+          <div class="form-group">
+
+            <div class="form-field">
+              <label for="email">Email (Gmail)</label>
+              <input type="email" id="email" name="email" placeholder="example@gmail.com">
+            </div>
+
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="637414XXXXX" pattern="[0-9]{10}" required>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+
+            <div class="form-field">
+              <label for="door">Door No.</label>
+              <input type="number" id="door" name="door" required>
+            </div>
+
+            <div class="form-field">
+              <label for="street">Street Name</label>
+              <input type="text" id="street" name="street" required>
+            </div>
+
+          </div>
+
+          <div class="form-group address-info">
+
+            <div class="form-field">
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" required>
+            </div>
+
+            <div class="form-field">
+              <label for="state">State</label>
+              <input type="text" id="state" name="state" required>
+            </div>
+
+            <div class="form-field">
+              <label for="zip">Zip</label>
+              <input type="text" id="zip" name="zip" pattern="[0-9]{5,6}" required>
+            </div>
+
+          </div>
+
+          <div class="btns">
+            <button type="submit" id="paymentButton">Proceed to Payment</button>
+            <button type="button" id="cartButton">Back to Cart</button>
+          </div>
+          <script src="checkout.js"></script>
+
+          <!-- Hidden audio element for the tick sound -->
+<audio id="tickSound" src="D:\project\homepage\sounds\buttons.mpeg" preload="auto"></audio>
+          
+        </form>
+      </div>
+  
+  <script src="buy.js" defer></script>
+
+</div>
+</body>
+</html>

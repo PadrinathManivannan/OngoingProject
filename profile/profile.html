@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user profile</title>
+    <link rel="stylesheet" href="D:\project\homepage\profile\profile.css">
+
+</head>
+<body>
+    <nav class="nav">
+        
+        <a href="#" class="logo">GheethasOrganics</a>
+
+    </nav>
+
+    <button id="update-profile-button" onclick="showProfileForm()">Update Profile</button>
+
+    <div class="profile-logo">
+    <img src="D:\project\homepage\profile\groom.png">
+    </div>
+    <span>User ID:</span>
+    <input type="text" id="user-id" placeholder="Auto-generated ID" readonly>
+
+    <button onclick="updateProfile()">Update profile</button>
+
+    <!-- Name -->
+    <span>Name:</span>
+    <input type="text" id="name" placeholder="Enter your name" required>
+
+    <!-- Mobile -->
+    <span>Mobile:</span>
+    <input type="tel" id="mobile" placeholder="Enter your mobile number" pattern="[0-9]{10}" required>
+
+    <!-- Mail -->
+    <span>Email:</span>
+    <input type="email" id="email" placeholder="Enter your email" required>
+
+    <!-- Delivery Address -->
+    <span>Delivery Address:</span>
+    <input type="text" id="address" placeholder="Enter your delivery address" required>
+
+    <!-- Save Button -->
+    <button onclick="saveProfile()">Save Profile</button>
+</div> 
+    
+    
+</body>
+</html>
