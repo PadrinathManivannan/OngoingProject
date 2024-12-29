@@ -1,0 +1,596 @@
+/**************************** Announcement bar ******************************/
+
+
+/* Container for the announcement bar */
+
+
+.announcement-bar {
+    width: 100%;
+    overflow: hidden;
+    background-color: #11101d; /* Light color for visibility */
+    color: white; /* Darker color for text */
+    font-size: 16px;
+    padding-top: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+    position: relative;
+}
+
+/* Inner content that will be animated */
+.announcement-content {
+    display: inline-flex;
+    animation: scroll-left 30s linear infinite;
+    white-space: nowrap;
+    gap: 75px; /* Space between announcements */
+    
+}
+
+/* Keyframe animation for scrolling effect */
+@keyframes scroll-left {
+    from {
+        transform: translateX(100%); /* Start off-screen to the right */
+    }
+    to {
+        transform: translateX(-100%); /* Move off-screen to the left */
+    }
+}
+
+.announcement-content:hover {
+    animation-play-state: paused;
+    
+}
+
+/* Styling for the links */
+.announcement-content a {
+    color: gold;
+    text-decoration: none;
+    cursor: pointer;
+    padding-bottom: 5px;
+    
+}
+
+/* Change link style on hover */
+.announcement-content a:hover {
+  transform: scale(1.3);
+}
+
+
+                      /* nav bar*/
+
+
+                      /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: white;
+ 
+  
+  
+}
+.nav {
+  
+  top: 37px;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  background: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+  
+}
+
+
+.nav,
+.nav .nav-links {
+  display: flex;
+  align-items: center;
+  
+}
+.nav {
+  justify-content: space-between;
+  
+  
+}
+.nav a{
+    color:white;
+    text-decoration: none;
+    font-family: "Young Serif", serif;
+}
+
+.logo-icon {
+  width: 50px;     /* Adjust width to your desired icon size */
+  height: 55px;    /* Adjust height to your desired icon size */
+  vertical-align: middle; /* Aligns icon with text */
+}
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Young Serif", serif;
+ 
+}
+.nav-links a:hover{
+  color: red;
+}
+
+.nav .logo {
+  font-size: 25px;
+  font-weight: 500;
+  font-family: "Young Serif", serif;
+}
+
+.nav .logo:hover{
+  color:#cc0000;
+}
+.nav .nav-links {
+  column-gap: 80px;
+  list-style: none;
+  
+}
+
+
+
+.nav.openSearch .nav-links a {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav .search-box{
+    position: absolute;
+    left: 33%;
+    height: 45px;
+    max-width: 600px;
+    width: 150%;
+    /*background-color: orange;*/
+    opacity: 0;
+    pointer-events: none;
+}
+
+.nav .search-icon{
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.nav i:hover{   /*for search icon*/
+   color: #cc0000;
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.search-box .search-icon{
+    position: absolute;
+    left: 15px;
+    padding-top: 30px;
+    height: 100%;
+    width: 100%;
+    padding-left: 30px;
+    cursor: text;
+    
+    transform: translateY(-50%);
+}
+
+.search-box{
+    position: absolute;
+    margin-top: 0%;
+    right: 250px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-box input{
+    height: 100%;
+    width: 100%;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 150px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-notification {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+  display: none; /* Hidden initially */
+}
+
+.cart-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 14px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: popupFade 1.5s forwards;
+}
+
+@keyframes popupFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}
+
+
+.nav .cart a{
+    align-items: normal;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+    
+
+}
+.cart i {
+    font-size: 32px; /* Increase this value to make the icon bigger */
+    color: white; /* Optional: change the color */
+  }
+  
+  /* Optional: hover effect for the icon */
+  .cart i:hover {
+    color: green; /* Color change on hover */
+  }
+  
+
+.nav .UserIcon a{
+    align-items: normal;
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+
+.UserIcon i {
+    font-size: 32px; /* Increase this value to make the icon bigger */
+    color: white; /* Optional: change the color */
+  }
+
+.UserIcon i:hover{
+    color: red
+}
+
+
+.nav.openSearch .search-box {
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+
+.nav .navOpenBtn,
+.nav .navCloseBtn {
+  display: none;
+}
+
+/* responsive */
+@media screen and (max-width: 1160px) {
+  .nav {
+    padding: 15px 100px;
+  }
+  .nav .search-box {
+    right: 150px;
+  }
+}
+@media screen and (max-width: 950px) {
+  .nav {
+    padding: 15px 50px;
+  }
+  .nav .search-box {
+    right: 100px;
+    max-width: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav .navOpenBtn,
+  .nav .navCloseBtn {
+    display: block;
+  }
+  .nav {
+    padding: 15px 20px;
+  }
+  .nav .nav-links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    max-width: 280px;
+    width: 100%;
+    padding-top: 100px;
+    row-gap: 30px;
+    flex-direction: column;
+    background-color: #11101d;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s ease;
+    z-index: 100;
+  }
+  .nav.openNav .nav-links {
+    left: 0;
+  }
+  .nav .navOpenBtn {
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .navCloseBtn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .nav .search-box {
+    top: calc(100% + 10px);
+    max-width: calc(100% - 20px);
+    right: 50%;
+    transform: translateX(50%);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+.young-serif-regular {
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+/* Container to center content */
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  
+  max-width: 800px; /* Restrict the maximum width for desktop screens */
+  padding: 20px; /* Add some spacing around the image */
+  
+  border-radius: 10px; /* Optional: Rounded corners */
+}
+
+/* Image styling */
+.butter img {
+  max-width: 100%; /* Make image responsive */
+  
+  height: auto; /* Maintain aspect ratio */
+  max-height: 500px; /* Restrict height for large images */
+  object-fit: contain; /* Ensure the image fits nicely */
+  border-radius: 10px; /* Optional: Match the border radius of the container */
+}
+
+
+/* Thumbnails */
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumbnails img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnails img:hover,
+.thumbnails img.active {
+  border-color: #007bff; /* Highlight color */
+}
+
+/* Wrapper to align sections side by side */
+.main-wrapper {
+  display: flex;
+  justify-content: space-around; /* Add space between sections */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Spacing between image and checkout section */
+  margin: 20px auto; /* Center the wrapper on the page */
+  max-width: 1200px; /* Restrict the overall width */
+}
+
+/* Checkout container styling */
+.checkout-container {
+  flex: 1; /* Allow it to take available space */
+  max-width: 400px; /* Restrict its width */
+  padding: 20px; /* Add some padding */
+  background-color:  rgb(199, 199, 243); /* Optional: Light background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+  
+  
+}
+
+/* Text alignment in checkout */
+.checkout-container .col-2 {
+  text-align: left;
+}
+
+
+
+.checkout-container input[type="number"] {
+  margin-left: 10px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Image Container */
+.container {
+  flex: 2; /* Take more space compared to checkout section */
+  display: flex;
+  flex-direction: column; /* Maintain the vertical alignment */
+  align-items: center; /* Center-align the content */
+}
+
+/* Thumbnails remain as-is */
+
+/* General container styling for centering */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+/* 3D Buy Now Button */
+.buy-now {
+  background: linear-gradient(135deg, #ff7e00, #ff5100); /* Premium orange gradient */
+  color: white; /* Text color */
+  font-size: 18px; /* Font size */
+  font-weight: bold; /* Bold text for emphasis */
+  padding: 12px 30px; /* Padding around text */
+  border: 4px double #ff7e00; /* Double border with premium orange */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px #cc4100, 0 6px 15px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+  cursor: pointer; /* Pointer cursor */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.buy-now:hover {
+  transform: translateY(-2px); /* Button moves up slightly */
+  box-shadow: 0 6px #cc4100, 0 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow */
+}
+
+/* Active/Pressed State */
+.buy-now:active {
+  transform: translateY(2px); /* Button moves down slightly */
+  box-shadow: 0 2px #cc4100; /* Reduced shadow for "pressed" effect */
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Aligns below the previous tags */
+  max-width: 400px; /* Restrict its width */
+  padding: 20px; /* Add some padding */
+  background-color: #f9f9f9; /* Optional: Light background */
+  border-radius: 10px; /* Rounded corners */
+  /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  Optional: Subtle shadow */
+  margin-top: 10%;
+}
+
+
+
+/* Styling for the link */
+.back a {
+  display: inline-block;
+  text-decoration: none;
+  
+  font-size: 18px;
+  font-weight: bold;
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Premium gradient */
+  padding: 15px 30px;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+}
+
+/* Hover effect */
+.back a:hover {
+  transform: translateY(-5px); /* Creates a 3D lift effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow for hover */
+}
+
+/* Curly bottom design */
+.back a::after {
+  content: '';
+  position: absolute;
+  bottom: -10px; /* Slightly below the button */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 6px;
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Same as button for coherence */
+  border-radius: 50%; /* Creates the curly effect */
+}
+
+/* Adding subtle shadow to the curly bottom */
+.back a::after {
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* General styles for checkout container */
+
+
+/* Styling for the <h1> tag */
+.checkout-container h1 {
+  font-family: "Young Serif", serif;
+  font-size: 36px;
+  color: #3c2a21; /* Rich brown for an elegant look */
+  text-align: center;
+  margin-bottom: 20px;
+  text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  border-bottom: 2px solid #dda15e; /* Adds a classy underline */
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+/* Styling for the <p> tag */
+.checkout-container p {
+  font-family: "Young Serif", serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a4a4a; /* Neutral gray for readability */
+  margin-bottom: 15px;
+}
+
+/* Highlighting the slogan */
+.checkout-container .col-2 p:first-child {
+  font-size: 24px;
+  color: #9c6644; /* Earthy tone to emphasize warmth */
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 25px;
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.2);
+  border: 2px dashed #dda15e;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.8); /* Subtle overlay background */
+  border-radius: 8px;
+}
