@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\project\homepage\homepage.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Paprika&family=Satisfy&family=Young+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="script.js" defer></script>
+    <title>Home</title>
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+    <!-------------------Announcement bar-----------------> 
+    <div class="announcement-bar">
+        <div class="announcement-content">
+        <a href="#offer1">🎉 10% off on your first purchase!</a>
+        <a href="#offer2">🚚 Free delivery on orders above ₹499!</a>
+        <a href="#offer3">📅 Limited-time offers on select products!</a>
+        <a href="#offer4">🔔 Subscribe to our newsletter for exclusive deals!</a>
+        </div>
+    </div>
+
+
+
+
+    <!---------------------------navigation bar--------------------->
+
+    <nav class="nav">
+        <i class="uil uil-bars navOpenBtn"></i>
+        
+        <a href="#" class="logo"><img src="D:\project\homepage\logo\Gheethas .ico" class="logo-icon">GheethasOrganics</a>
+        
+        <ul class="nav-links">
+          <i class="uil uil-times navCloseBtn"></i>
+          <li><a href="#">Home</a></li>
+          
+          
+          <li><a href="D:\project\homepage\about\about.html">About Us</a></li>
+          <li><a href="D:\project\homepage\Feedback\feedback.html">Feedback</a></li>
+          <li><a href="D:\project\homepage\FAQs\faqs.html">FAQs</a></li>
+          <li><a href="#">My Orders</a></li>
+          
+        </ul>
+        
+        <i class="uil uil-search search-icon" id="searchIcon"></i>
+       
+       
+        <!-------------------<i class="uil uil-user-square" id="UserIcon"></i>----------->
+ 
+        
+
+        <div class="search-box">
+            <i class="uil uil-search search-icon" id="searchIcon"></i>
+            <input type="text"  id="searchInput" placeholder="Search here..." />
+        </div>
+               
+        
+        <div class="cart">
+            <a href="D:\project\homepage\cart\cart.html"><i class="uil uil-shopping-cart-alt"></i></a>
+            <span class="cart-notification" id="cart-notification" style="display: none;">0</span>
+          </div>
+          <script src="D:\project\homepage\cart\cart.js"></script>
+
+
+        <div class="UserIcon">
+            <a href="profile" ><i class="uil uil-user-square" id="UserIcon"></i></a>
+            </div>
+        
+            
+        </div>
+
+      </nav>
+
+      
+
+
+      <!-------------------------------------Ad Images-------------------------------------------->
+      <div class="ad-images" id="slider">
+        
+        <img src="D:\project\homepage\pexels-felicity-tai-7965940.png">
+        <img src="D:\project\homepage\pexels-niloy007-29048358.png">
+        <img src="D:\project\homepage\pexels-pixabay-51311.png">      
+        <img src="D:\project\homepage\butter.jpg">
+        <img src="D:\project\homepage\pexels-rajukhanp-4501592.jpg">
+        
+        
+
+      </div>
+
+
+      <!----------------------------- Features Section------------------->
+
+      <section class="features" id="features">
+        
+        <h1 class="heading"> <span>Our features </span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="D:\project\homepage\feature\certified-organic-badge.gif" alt="">
+                <h3>Fresh and Organic</h3>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab sit est inventore hic quidem expedita numquam ullam ut dolore accusantium? Exercitationem eveniet autem nam architecto eius hic omnis eos sed.</p>
+                </div>
+                <a class="button" onclick="toggleReadMore(event)">Read more</a>
+            </div>
+        
+            <div class="box">
+                <img src="D:\project\homepage\feature\door.gif" alt="">
+                <h3>Free Delivery</h3>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam excepturi totam eos voluptas obcaecati tenetur aut aperiam rem accusantium quae quasi voluptatem autem, neque dolorem quaerat et nemo ab similique.</p>
+                </div>
+                <a class="button" onclick="toggleReadMore(event)">Read more</a>
+            </div>
+        
+            <div class="box">
+                <img src="D:\project\homepage\feature\tax.gif" alt="">
+                <h3>Tax Included Payment</h3>
+                <div class="content">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos nulla id ipsam, illo dolores quibusdam ex. Nihil, numquam? Provident fugiat id optio sit accusamus distinctio sed consequuntur aspernatur, quos expedita?</p>
+                </div>
+                <a class="button" onclick="toggleReadMore(event)">Read more</a>
+            </div>
+        
+        </div>
+            </div>
+
+      </section>
+
+      <!----------------------------- Features Section   ended here  ------------------->
+
+
+      <!--------------------------------------- Filter option ------------------->
+
+     
+
+            <!------------------------------------- Product page--------------------------->
+
+
+<section class="products" id="products">
+
+    <h1 class="heading"><span>Our Products</span></h1>
+
+    <div class="product-slider">
+
+        <div class="wrapper">
+
+<!------------------------Butter--------------->
+
+            <div class="box" data-product-name="Butter" data-measurement="kg" >
+
+                <img src="D:\project\homepage\categories\butter.jpg" alt="Butter">
+
+                <h3> Butter</h3>
+                <h7>"Savor the Flavor of Real, Rich Butter!"</h7>
+
+                <div class="price">From ₹99</div>
+
+                <!-- Star rating container -->
+                 
+  <div class="star-rating" data-rating="0">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <span class="rating-value">(0)</span>
+  </div>
+               
+
+                <div class="button-container">
+
+                    <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+                    
+
+                </div>
+
+            </div>
+        
+                      
+
+                <!-------------------- Curd ---------->
+
+                <div class="box" data-product-name="curd" data-measurement="liters">
+
+                <img src="D:\project\homepage\categories\curd.jpg" alt="">
+
+                <h3> Pure Curd</h3>
+                <h7>"For a Happy Gut and Glowing You, Curd is the Way To!"</h7>
+
+                <div class="price">₹99</div>
+
+                <!-- Star rating container -->
+                 
+  <div class="star-rating" data-rating="0">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <span class="rating-value">(0)</span>
+  </div>
+               
+
+                <div class="button-container">
+                    
+                    <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+                
+                </div>
+
+            </div>
+
+
+
+            
+                      
+            
+
+
+            <!----cold pressed oil-->
+
+            <div class="box" data-product-name="Cooking-oil" data-measurement="liters">
+
+                <img src="D:\project\homepage\categories\coldpressedoil.jpg" alt="">
+
+                <h3> Cooking Oils</h3>
+                
+                <h4> Arrival Soon</h4>
+
+                <div class="price">₹99</div>
+
+                <!-- Star rating container -->
+                 
+  <div class="star-rating" data-rating="0">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <span class="rating-value">(0)</span>
+  </div>
+               
+
+                <div class="button-container">
+                    
+                    <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+               
+                </div>
+
+            </div>
+
+            
+            
+
+            <!----- face powder---->
+
+            <div class="box" data-product-name="facemask" data-measurement="kg">
+
+                <img src="D:\project\homepage\categories\face powder.jpg" alt="">
+
+                <h3> Face Masks</h3>
+                <h7>"Unlock Radiance with 100% Natural Face Mask Powders!"
+                </h7>
+
+                <div class="price">₹99</div>
+
+                <!-- Star rating container -->
+                 
+  <div class="star-rating" data-rating="0">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <span class="rating-value">(0)</span>
+  </div>
+               
+
+                <div class="button-container">
+                   
+                    <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+                
+                </div>
+
+            </div>
+
+ 
+
+<!-------- Ghee cream-->
+
+<div class="box" data-product-name="Gheecream" data-measurement="kg">
+
+    <img src="D:\project\homepage\categories\ghee cream.jpg" alt="">
+
+    <h3>Ghee Cream</h3>
+    <h7> "Pamper Your Skin with the Richness of Ghee Cream!"
+    </h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+       
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+    
+    </div>
+
+</div>
+
+<!--- Ghee-->
+
+<div class="box" data-product-name="Ghee" data-measurement="liters">
+
+    <img src="D:\project\homepage\categories\ghee.jpg" alt="">
+
+    <h3> Ghee </h3>
+    <h7> "The Rich Taste of Pure Ghee!,
+        The Heart of Every Traditional Recipe!"</h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+   
+    </div>
+
+</div>
+
+
+<!----- hair oil-->
+
+<div class="box" data-product-name="Hair-Oil" data-measurement="liters">
+
+    <img src="D:\project\homepage\categories\hairoil.jpg" alt="">
+
+    <h3> Hair Oil</h3>
+    <h7> "Say Goodbye to Damage, Hello to Natural Hair Care!"
+    </h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+       
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+    
+    </div>
+
+</div>
+
+<!-------lassi -->
+
+<div class="box" data-product-name="Lassi" data-measurement="liters">
+
+    <img src="D:\project\homepage\categories\lassi.jpg" alt="">
+
+    <h3> Lassi </h3>
+    <h7> "Chill Out with the Creamy Goodness of Lassi!"</h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+    
+    </div>
+
+</div>
+
+<!--- nut butter-->
+
+<div class="box" data-product-name="NutButter" data-measurement="kg">
+
+    <img src="D:\project\homepage\categories\nut butter'.jpg" alt="">
+
+    <h3> Nut Butters</h3>
+    <h7> "Spoonfuls of Energy, Spread with Love – Nut Butter Bliss!"
+    </h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+    
+    </div>
+
+</div>
+
+
+<!----- Palkova---->
+
+<div class="box" data-product-name="Palkova" data-measurement="kg">
+
+    <img src="D:\project\homepage\categories\palkova.jpg" alt="">
+
+    <h3> Palkova</h3>
+    <h7> "Pure Milk, Pure Love, Pure Palkova!"
+    </h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+    
+    </div>
+
+</div>
+
+
+
+<!--paneer-->
+
+<div class="box" data-product-name="Paneer" data-measurement="kg">
+
+    <img src="D:\project\homepage\categories\paneer 1.jpeg" alt="">
+
+    <h3> Paneer</h3>
+    <h7> "Healthy, Hearty, and Homegrown – Paneer for Every Craving!"</h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+    
+    </div>
+
+</div>
+
+
+<!---- pickles-->
+
+<div class="box" data-product-name="Pickles" data-measurement="kg">
+
+    <img src="D:\project\homepage\categories\pickles.jpg" alt="">
+
+    <h3> Pickles </h3>
+    <h7>"Spice Up Your Meal with the Magic of Pickles!"</h7>
+    <h4> Arrival Soon</h4>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+   
+    </div>
+
+</div>
+
+
+<!---saplings-->
+
+
+<div class="box" data-product-name="Plants-Saplings">
+
+    <img src="D:\project\homepage\categories\saplings.jpg" alt="">
+
+    <h3> Saplings </h3>
+    <h7> "Plant a Sapling, Grow a Future!"</h7>
+    <h4> Coming soon</h4>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+   
+    </div>
+
+</div>
+
+
+<!----Skimmed milk -->
+
+<div class="box" data-product-name="SkimmedMilk" data-measurement="liters">
+
+    <img src="D:\project\homepage\categories\skimmed milk.jpg" alt="">
+
+    <h3> Skimmed Milk</h3>
+    <h7> "Pure Nutrition, Naturally Light – Choose Skimmed Milk!"
+    </h7>
+
+    <div class="price">₹99</div>
+
+    <!-- Star rating container -->
+     
+<div class="star-rating" data-rating="0">
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<i class="fas fa-star"></i>
+<span class="rating-value">(0)</span>
+</div>
+   
+
+    <div class="button-container">
+        
+        <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+    
+    </div>
+
+</div>
+
+
+           
+            <!---------Butter Milk---->
+
+
+<div class="box" data-product-name="ButterMilk" data-measurement="liters">
+
+                <img src="D:\project\homepage\categories\Churned-Buttermilk.jpg" alt="">
+
+                <h3> Butter Milk</h3>
+                <h7>"Made with Care, Loved Everywhere – Buttermilk Power!"</h7>
+
+                <div class="price">₹99</div>
+
+                <!-- Star rating container -->
+                 
+  <div class="star-rating" data-rating="0">
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <i class="fas fa-star"></i>
+    <span class="rating-value">(0)</span>
+  </div>
+
+  <div class="button-container">
+   
+    <a class="cart-button" onclick="toggleBasket(event, this)">Add to Basket</a>
+
+  
+  </div>
+
+</div>
+
+                      
+
+                                      <!-- Popup Modal -->
+
+
+                                      <div id="popup" class="popup hidden">
+                                        <div class="popup-content">
+                                          <h2>Select Quantity</h2>
+                                          <label for="quantityType">Select Size</label>
+                                          <select id="quantityType"></select>
+                                      
+                                          <label for="quantity">Select Quantity</label>
+                                          <input type="number" id="quantity" min="1" max="10" value="1" required>
+                                      
+                                         
+                                      
+                                          <div class="popup-actions">
+                                            <button id="addToCart" class="btn-green">Add to Basket</button>
+                                            <button id="buyNow" class="btn-premium">Buy Now</button>
+                                          </div>
+                                        </div>
+                                      </div>
+                                      
+</div>
+    </div>
+</section>
+
+
+
+
+
+
+
+     
+<!------------------------------Products page ended here------------------->
+
+
+
+<!-----------------------------Footer section------------------>
+
+
+<section class="footer">
+    <div class="box-container">
+   
+        <div class="box">
+            <h3>GheethasOrganics <i><img src="D:/project/homepage/shopping-bag.png" class="shopping-bag"></i></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-whatsapp"></a>
+                <a href="#" class="fab fa-messages"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>To Contact Us <i><img src="D:/project/homepage/tech-support.gif" class="contact"></i></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore</p>
+            <div class="contact">
+                <a href="#" class="links"><i class="fas fa-phone"></i> +91 6374148635</a>
+                <a href="#" class="links"><i class="fas fa-phone"></i> +91 9123506527</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> gheethasorganics@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-envelope"></i> gheethasorganicsverified@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Pondicherry, India</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i> Chidambaram, India</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Quick Links Here</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore</p>
+            <div class="quick-links">
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Our Features</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Our Products</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> Feedback</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> About Us</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i> FAQs</a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h3>Don't Miss Our Offers!!!</h3>
+            <p>Subscribe for latest updates</p>
+            <input type="email" placeholder="Please enter your email" class="email">       
+            <input type="submit" value="Subscribe" class="button">  
+            <img src="D:/project/homepage/newsletter.gif" class="newsletter-img" alt="">
+        </div>
+        
+    </div>
+</section>
+
+
+
+
+ </div>
+</body>
+</html>
